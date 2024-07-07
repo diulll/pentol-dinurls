@@ -1,0 +1,87 @@
+*html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-image: url('gambar\ pentol.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.header{
+    margin: 0;
+    padding: 100%;
+    box-sizing: border-box;
+    font-family: "poppins", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 17px 100px;
+    background: rgba(255, 255, 255, 0.11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: rgba(255, 255, 255, .2);
+    z-index: 100;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4) transparent);
+    transition: .5s;
+}
+
+.header:hover::before{
+    left: 100%;
+}
+
+
+.header a{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header a:hover{
+    color: #B21807;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.navbar a:hover{
+    color: yellow;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: .2s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}

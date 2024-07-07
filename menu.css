@@ -1,0 +1,16 @@
+body{
+    background-image: url(About\ bg.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.kembali {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+
+
